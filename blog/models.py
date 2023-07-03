@@ -2,7 +2,6 @@ from django.db import models
 import uuid
 from django.contrib.auth.models import User
 from mptt.models import MPTTModel, TreeForeignKey
-from django.contrib.auth.models import AbstractUser
 
 
 class Tags(models.Model):
