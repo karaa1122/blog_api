@@ -1,0 +1,4 @@
+env/
+blogs/
+dockerignore
+.env.dev
