@@ -69,6 +69,9 @@ class Commentview(viewsets.ModelViewSet):
 class PublicView(viewsets.ModelViewSet):
     queryset=Blog.objects.all()
     serializer_class=BlogSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['title', 'blog_text']
+    pagination_class = BlogPagination
 
 
 class likeView(viewsets.ModelViewSet):
