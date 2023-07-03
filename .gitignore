@@ -2,4 +2,4 @@ env/
 blogs/
 dockerignore
 .env.dev
-data\db
+data/
