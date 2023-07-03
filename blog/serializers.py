@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from rest_framework_simplejwt.tokens import RefreshToken, TokenError
 from rest_framework import exceptions, serializers
 from django.contrib.auth import authenticate
 from .models import Blog,Comment,Tags,Likes
