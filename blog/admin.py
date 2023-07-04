@@ -10,7 +10,6 @@ class BlogAdmin(admin.ModelAdmin):
     list_per_page = 5
 
 
-
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     search_fields = ['content']  

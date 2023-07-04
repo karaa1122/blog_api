@@ -3,7 +3,7 @@ from blog.models import *
 from rest_framework.views import APIView
 from rest_framework import status
 from .serializers import *
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework import viewsets, filters
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
@@ -72,6 +72,7 @@ class PublicView(viewsets.ModelViewSet):
     filter_backends = [filters.SearchFilter]
     search_fields = ['title', 'blog_text']
     pagination_class = BlogPagination
+    permission_classes = [AllowAny]
 
 
 class likeView(viewsets.ModelViewSet):
